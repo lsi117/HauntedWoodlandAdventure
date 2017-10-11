@@ -1,37 +1,39 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Haunted Woodland Adventure</title>
+        <!--author: lauren inacio-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+<link href="https://fonts.googleapis.com/css?family=Finger+Paint" rel="stylesheet">    
+<link type="text/css" rel="stylesheet" href="../css/reset.css"/>
+<link type="text/css" rel="stylesheet" href="../css/styles.css"/>
 
-You can use the [editor on GitHub](https://github.com/lsi117/HauntedWoodlandAdventure/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+    </head>
+    <body>
+       <div id="customFadeIn">
 
-### Markdown
+       <div id="container">
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+        <div id="gameBanner"><h1>Haunted WoodLand Adventure</h1></div>
+        
+        <div id="gameMessage">
+        <img src="../Images/start.gif" alt="A Haunted Forest" />
+        
+        <p><span id="gameStoryOne"></span></p>  <!--place game story from objs-->
 
-```markdown
-Syntax highlighted code block
+        </div>
+        
+        <form name='playForm'>
+            <input type='text' name='pName' maxlength="20" placeholder='Enter Your Name...and then your journey will begin..' id='playerName' required>    <!--player enters name here--> 
+            <br>
+            <input type='submit' value='Submit' id='save'> <!--player submits name here stored in local and will be eliminated in ROOM THREE, ROOM FOUR, ROOM FIVE ROOM TEN -->
+        </form>
+        
+            <button><a class="goToRoomTwo" href="roomTwo.html">Pick yourself up and run away as fast as you can!!</a></button> <!--button results in succession to next ROOM-->
+            <button><a class="goToRoomFour" href="roomFour.html">You see a nearby overgrown shrub, hide behind it and stay very quite.</a></button> <!--button results in player loss-->
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/lsi117/HauntedWoodlandAdventure/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+            
